@@ -1,2 +1,2 @@
 # advanced_node
-Developing caching system,jest testing pipeline and continuos integration
+Developing caching system,jest testing pipeline and continuous integration
