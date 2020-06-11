@@ -17,7 +17,7 @@ export const submitBlog = (values, file, history) => async (dispatch) => {
   try {
     const uploadConfig = await axios.get('/api/upload');
 
-    await axios.put(uploadConfig.data.url, file);
+    file && await axios.put(uploadConfig.data.url, file);
 
     const res = await axios.post('/api/blogs', {
       ...values,
